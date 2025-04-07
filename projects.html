@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <style>
+    body {
+      background-color: #061b1f;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #000;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #00c4b4;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00c4b4;
+      margin: 40px 0 20px;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .project-card {
+      background-color: #1c1c1c;
+      border-radius: 8px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 196, 180, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .project-title {
+      font-size: 18px;
+      color: #ffc700;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    .view-button {
+      background-color: #00c4b4;
+      border: none;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .view-button:hover {
+      background-color: #00a99d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+    <a href="https://www.linkedin.com/in/esraa-abdelmoein/">LinkedIn</a>
+    <a href="documents.html">Documents</a>
+  </div>
+
+  <h1>My Projects</h1>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <img src="projects/images/egyptian-recipes.jpg" alt="Egyptian Recipes" />
+      <div class="project-title">Wasafat – Egyptian Recipes</div>
+      <div class="project-description">A stylish website featuring traditional Egyptian food with pharaonic design.</div>
+      <a class="view-button" href="projects/recipes/egyrecipes.html">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="projects/images/easypchelp.jpg" alt="EasyPC Help" />
+      <div class="project-title">EasyPCHelp</div>
+      <div class="project-description">Guidance website for seniors and beginners on using computers easily.</div>
+      <a class="view-button" href="projects/EasyPC/easypc.html">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="projects/images/docbridge.jpg" alt="DocBridge" />
+      <div class="project-title">DocBridge</div>
+      <div class="project-description">Professional platform to manage document exchange with secure interface.</div>
+      <a class="view-button" href="projects/docbridge/docbridge.html">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="projects/images/calculator.jpg" alt="Calculator" />
+      <div class="project-title">Calculator</div>
+      <div class="project-description">Simple calculator built with HTML, CSS, and JavaScript.</div>
+      <a class="view-button" href="projects/calculator/calculator.html">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="projects/images/snowball.jpg" alt="Snowball Game" />
+      <div class="project-title">Snowball Game</div>
+      <div class="project-description">Fun animated game built with JavaScript and HTML canvas.</div>
+      <a class="view-button" href="projects/snowball/snowball.html">View Project</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Esraa Abdelmoein. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
