@@ -1,0 +1,259 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5e9d6;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #8fbccc;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffe399;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff5e6;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #e07a5f;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.hero img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #8fbccc;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.cards-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards-section h1 {
+  color: #3d5a80;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  color: #e07a5f;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 16px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.faq-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.faq-section h1 {
+  text-align: center;
+  color: #3d5a80;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.faq h2 {
+  color: #e07a5f;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.faq p {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.contact-section {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section h1 {
+  color: #3d5a80;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #8fbccc;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #6b9bab;
+}
+
+.contact-img {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.topic-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.7;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.topic-section h1 {
+  font-size: 30px;
+  color: #3d5a80;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.topic-section h2 {
+  color: #e07a5f;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.topic-section ol,
+.topic-section ul {
+  padding-left: 25px;
+}
+
+.topic-section li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #8fbccc;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #6b9bab;
+}
+

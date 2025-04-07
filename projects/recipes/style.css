@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-image: url('images/pharaonic-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #3a2e1e;
+}
+
+/* Header */
+header {
+  background-color: rgba(139, 94, 60, 0.9);
+  color: gold;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid gold;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin: 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffdf80;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 6px 12px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  border-color: gold;
+  background-color: rgba(255, 215, 128, 0.2);
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(255, 248, 230, 0.85);
+  margin: 40px auto;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.intro h2 {
+  font-size: 2.2em;
+  color: #6b4c2e;
+}
+
+.intro p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.intro img {
+  margin-top: 30px;
+  max-width: 100%;
+  border: 4px solid #8b5e3c;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(139, 94, 60, 0.9);
+  color: gold;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  border-top: 4px solid gold;
+  margin-top: 60px;
+}
+
+/* Optional: Ankh Icon */
+.ankh-icon {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Recipes Section */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 248, 230, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card {
+  background-color: #fff6dd;
+  border: 2px solid #8b5e3c;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.03);
+}
+
+.recipe-card h3 {
+  color: #6b4c2e;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.recipe-card p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #3a2e1e;
+}
+
+.recipe-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+  background-color: #0d1b2a;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+#game-area {
+  width: 90%;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid #ffffff;
+  background: linear-gradient(to bottom, #1b263b, #415a77);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.snowball {
+  width: 60px;
+  height: 60px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+  cursor: pointer;
+  animation: float 2.5s ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.1) rotate(360deg);
+    opacity: 1;
+  }
+}
