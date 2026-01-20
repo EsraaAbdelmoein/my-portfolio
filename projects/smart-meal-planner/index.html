@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Meal Planner | Esraa Abdelmoein</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-bar">
+    <a class="back-link" href="../../projects.html">← Back to Projects</a>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h1>Smart Meal Planner</h1>
+      <p>Build a simple healthy meal plan with a calm background atmosphere.</p>
+
+      <div class="music-box">
+        <button id="musicToggle" class="btn">Play Music 🎵</button>
+
+        <audio id="bgMusic" loop>
+          <source src="audio/music.mp3" type="audio/mpeg" />
+        </audio>
+
+        <p class="hint">Music is optional. You can pause anytime.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Your Info</h2>
+
+      <form id="mealForm" class="form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="weight">Weight (kg)</label>
+          <input id="weight" type="number" placeholder="Weight (Kg)" min="20" max="300" required />
+        </div>
+
+        <div class="form-row">
+          <label for="height">Height (cm)</label>
+          <input id="height" type="number" placeholder="Hight (cm)" min="80" max="250" required />
+        </div>
+
+        <div class="form-row">
+          <label for="goal">Goal</label>
+          <select id="goal" required>
+            <option value="lose">Lose Weight</option>
+            <option value="maintain">Maintain Weight</option>
+            <option value="healthy">Healthy Lifestyle</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-wide">Generate My Plan</button>
+      </form>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>Your Plan</h2>
+      <p id="summary" class="summary"></p>
+
+      <div class="plan-grid">
+        <div class="plan-item">
+          <h3>Breakfast</h3>
+          <p id="breakfast"></p>
+        </div>
+
+        <div class="plan-item">
+          <h3>Lunch</h3>
+          <p id="lunch"></p>
+        </div>
+
+        <div class="plan-item">
+          <h3>Dinner</h3>
+          <p id="dinner"></p>
+        </div>
+
+        <div class="plan-item">
+          <h3>Snack</h3>
+          <p id="snack"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Esraa Abdelmoein | Smart Meal Planner</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
